@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css.css">
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+
+<!-- Header -->
+<div class="headimg" style="overflow:auto;">
+    <div class="topnav" id="myTopnav">
+        <a href="Home.html">Home</a>
+        <a href="#Contact" class="active">Contact</a>
+        <a href="About.html">About Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div style="overflow:auto; width: 90%; margin:auto;">
+        <div class="menuh">
+            <img width=100% height=width src="images/Logo.png">
+        </div>
+
+        <!--<div class="mainh">
+            <h2>Awsome Industries</h2>
+        </div>-->
+        
+    </div>
+
+</div>
+
+<div class="mainb">
+    <h2 style="text-align:center;">Have a Question?</h2>
+</div>
+
+<div class="mainb">
+    <h2 style="text-align:center;">We Have an Answer!</h2>
+    <!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>-->
+</div>
+
+
+<!-- Contact -->
+<div class="containo" >
+  
+    <div class="maincontact">
+        <h2>Address</h2>
+        </br></br>
+        <h2>Email</h2>
+        </br></br>
+        <!--<h2>Phone Number</h2>-->
+    </div>
+  
+    <div class="rightcontact">
+        <h1>Contact</h1>
+        <div class="containc" >
+            <div class="maincontactinside">
+                <h2>Name</h2>
+                <input type="text" id="textcont" name="fname">
+                <h2>Email</h2>
+                <input type="text" id="textcont" name="fname">
+                <h2>Topic</h2>
+                <input type="text" id="textcont" name="fname">
+            </div>
+
+            <div class="rightcontactinside">
+                <h2>Company</h2>
+                <input type="text" id="textcont" name="fname">
+                <h2>Phone Number</h2>
+                <input type="text" id="textcont" name="fname">
+            </div>
+        </div>
+        <h2>Tell Us what you need.</h2>
+        <input type="text" id="textcont" name="fname" style="height: 200px;width:70%;">
+        </br>
+        <button type="button" id="submit" onclick="alert('Hello world!')">Submit</button>
+    </div>
+</div>
+
+
+<!-- End Contact -->
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+
+</body>
+<footer>
+    <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright w3schools.com</div>
+</footer>
+</html>
