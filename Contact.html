@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css.css">
+
 </head>
 <body style="font-family:Verdana;color:#aaaaaa;">
 
@@ -11,7 +12,7 @@
 <!-- Header -->
 <div class="headimg" style="overflow:auto;">
     <div class="topnav" id="myTopnav">
-        <a href="index.html">Home</a>
+        <a href="Index.html">Home</a>
         <a href="#Contact" class="active">Contact</a>
         <a href="About.html">About Us</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -54,35 +55,38 @@
     </div>
   
     <div class="rightcontact">
+        <iframe id="contact-info" src="https://docs.google.com/forms/d/e/1FAIpQLSfCy9tIvQHqmZZzKtEpFYM2-c0mrn_Xf-cw14Z1s2WYQ2kArw/viewform?usp=sf_link" width="100%" height="1075px" title="Contact Form"></iframe>
+        <!--
         <h1>Contact</h1>
         <div class="containc" >
             <div class="maincontactinside">
                 <h2>Name</h2>
-                <input type="text" id="textcont" name="fname">
+                <input type="text" id="textcont" name="s_Name">
                 <h2>Email</h2>
-                <input type="text" id="textcont" name="fname">
+                <input type="text" id="textcont" name="s_Email">
                 <h2>Topic</h2>
-                <input type="text" id="textcont" name="fname">
+                <input type="text" id="textcont" name="s_Topic">
             </div>
 
             <div class="rightcontactinside">
                 <h2>Company</h2>
-                <input type="text" id="textcont" name="fname">
+                <input type="text" id="textcont" name="s_Company">
                 <h2>Phone Number</h2>
-                <input type="text" id="textcont" name="fname">
+                <input type="text" id="textcont" name="s_PhoneNum">
             </div>
         </div>
         <h2>Tell Us what you need.</h2>
-        <input type="text" id="textcont" name="fname" style="height: 200px;width:70%;">
+        <input type="text" id="textcont" name="s_Info" style="height: 200px;width:70%;">
         </br>
-        <button type="button" id="submit" onclick="alert('Hello world!')">Submit</button>
+        <button type="button" id="submit-form" onclick="form.php">Submit</button>
     </div>
+    -->
 </div>
 
 
 <!-- End Contact -->
 
-<script>
+<script data-cfasync="false" type="text/javascript">
     function myFunction() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
@@ -91,7 +95,16 @@
         x.className = "topnav";
       }
     }
+
+
+
+    $('iframe').load(function () {
+    $('iframe').height($('iframe').contents().height());
+});
+
+
 </script>
+
 
 </body>
 <footer>
