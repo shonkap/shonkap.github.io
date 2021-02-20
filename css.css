@@ -2,14 +2,19 @@
 box-sizing: border-box;
 }
 body {
+    color: white;
     margin: 0;
     background: linear-gradient( rgb(0, 0, 0) 20%, rgb(243, 187, 4));
 }
 footer {
-    background-color: rgb(192, 192, 192);
+    background-color: rgb(243, 187, 4);
 }
-h2 {
-
+h3 {
+        font-size: 30px;
+}
+small {
+    font-size: 20px;
+    font-weight: 50;
 }
 .containo {
     overflow:auto;
@@ -51,16 +56,17 @@ h2 {
 .topnav .icon {
     display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
         float: right;
         display: block;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
     .topnav a{
         float: left;
+        background-color: #eb8d12;
     }
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
@@ -154,6 +160,7 @@ h2 {
     float:left;
     width:30%;
     padding:0 20px;
+    color: white;
 }
 .rightcontact {
     background-color:#e5e5e5;
@@ -195,4 +202,35 @@ h2 {
     .menuh, .mainh, .righth, .mainc, .rightc, .maincontact, .rightcontact {
     width:100%;
     }
+}
+
+/* new containers*/
+.col-3{
+    display: table;
+    float:left;
+    width:30%; 
+    text-align: left;
+    margin: 0;
+}
+.row{
+    display: table-cell;
+    vertical-align: middle;
+}
+.no-top{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.style-none a:link{
+    text-decoration: none;
+    color: blue;
+    margin: 0;
+    text-align: left;
+}
+ul{
+    list-style-type: none;
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
 }
