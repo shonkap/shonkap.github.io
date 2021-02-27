@@ -8,7 +8,7 @@ body {
 }
 footer {
     width: 100%;
-    background-color: rbg(243, 187, 4);
+    background-color: rgb(41, 40, 39);
     border-top: 2px solid rgb(238, 238, 236);
 }
 h3 {
@@ -30,8 +30,14 @@ small {
     padding-top:1%;
     width:100%;
     margin:auto;
+    margin-bottom: 0px;
 
     color: rgb(228, 228, 231);
+}
+.containf{
+    padding-top: 4px;
+    text-align: center;
+    color: white;
 }
 
     /*Nav Bar*/
@@ -225,7 +231,13 @@ small {
 
 .style-none a:link{
     text-decoration: none;
-    color: blue;
+    color: white;
+    margin: 0;
+    text-align: left;
+}
+.style-none a:visited{
+    text-decoration: none;
+    color: white;
     margin: 0;
     text-align: left;
 }
@@ -236,3 +248,4 @@ ul{
     margin: 0;
     padding: 0;
 }
+
