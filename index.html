@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css.css">
 </head>
@@ -10,16 +11,18 @@
 
 <!-- Header -->
 <div class="headimg" style="overflow:auto;">
-    <div class="topnav" id="myTopnav">
-        <a href="#Home" class="active">Home</a>
-        <a href="Contact.html">Contact</a>
-        <a href="About.html">About Us</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+    <div class="fixed-top">
+        <div class="topnav" id="myTopnav">
+            <a href="#Home" class="active">Home</a>
+            <a href="Contact.html">Contact</a>
+            <a href="About.html">About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </div>
 
-    <div style="overflow:auto; width: 90%; margin:auto;">
+    <div style="overflow:auto; width: 90%; margin:auto; padding-top:50px;">
         <div class="menuh">
             <img width=100% height=width src="images/Logo.png">
         </div>
@@ -36,71 +39,78 @@
 
 </div>
 
-<div class="mainb">
-    <h2 style="text-align:center;">PCB Manufacturing for Every Application</h2>
+<div class="mainp">
+    <div class="mainb">
+        <h2 style="text-align:center;">PCB Manufacturing for Every Application</h2>
+    </div>
 </div>
 
 <!-- Content -->
-<div class="containo" >
-<div class="containc" >
 
-    <div class="mainc">
-        <h2>Prototyping</h2>
-        <p>Small run groups of less than 10 are supported for prototyping. We support placing unique components per board for prototypign and testing purposes. Any assemblies requiring 3D printing can be done in house.</p>
+<div class="container" >
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-8">
+                <h2>Prototyping</h2>
+                <p>Small run groups of less than 10 are supported for prototyping. We support placing unique components per board for prototypign and testing purposes. Any assemblies requiring 3D printing can be done in house.</p>
+            </div>
+
+            <div class="col-12 col-sm-4" >
+                <img width=100% height=width src="images/Protoype.jpg">
+            </div>
+        </div>
+    
+
+
+    <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-4">
+            <img width=100% height=width src="images/PCB.jpg">
+        </div>
+
+        <div class="col-12 col-sm-8">
+            <h2>Small to Medium PCBs</h2>
+            <p>We can assemble PCBs up to 12" by 8" (304.8mm by 203.2mm). Customer supplied boards are supported, or we'll source boards for you based on your specifications.</p>
+        </div>
     </div>
 
-    <div class="rightc" style="padding: 0px;">
-        <img width=100% height=width src="images/Protoype.jpg">
-    </div>
-</div>
 
-<div class="containc" >
 
-    <div class="rightc" style="padding: 0px;">
-        <img width=100% height=width src="images/PCB.jpg">
-    </div>
+    <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-8">
+            <h2>Component Types</h2>
+            <p>All through hole applications are supported. All SMD components are supported for 0402 components or larger. Continuity testing and inspection of each board is done after assembly. Customer provided components are supported, or we'll source components based on your specifications. </p>
+        </div>
 
-    <div class="mainc">
-        <h2>Small to Medium PCBs</h2>
-        <p>We can assemble PCBs up to 12" by 8" (304.8mm by 203.2mm). Customer supplied boards are supported, or we'll source boards for you based on your specifications.</p>
-    </div>
-</div>
-
-<div class="containc" >
-
-    <div class="mainc">
-        <h2>Component Types</h2>
-        <p>All through hole applications are supported. All SMD components are supported for 0402 components or larger. Continuity testing and inspection of each board is done after assembly. Customer provided components are supported, or we'll source components based on your specifications. </p>
+        <div class="col-12 col-sm-4">
+            <img width=100% height=width src="images/comptype.jpg">
+        </div>
     </div>
 
-    <div class="rightc" style="padding: 0px; margin-bottom: 0px;">
-        <img width=100% height=width src="images/comptype.jpg">
-    </div>
-</div>
 
-<div class="containc" >
 
-    <div class="rightc">
-        <h2>About</h2>
-        <p>junk</p>
-    </div>
+    <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-4">
+            <h2>About</h2>
+            <p>junk</p>
+        </div>
 
-    <div class="mainc">
-        <h2>Assembly</h2>
-        <p>Placement of assembled PCBs into enclosures, harnesses, or fixtures is supported. Enclosure parts in most cases must be provided, but some prototyping enclosures can be manufactured in house. Packaging for individual sale can also be provided. All assemblies past SMT/THT depend on the needs of customer, so feel free to contact us with any questions!</p>
-    </div>
-</div>
-
-<div class="containc" >
-
-    <div class="mainc">
-        <h2>Medium Volume</h2>
-        <p>We are set up to do medium volume production to get your product to market on time. Our maximum production rates will depend on the application, the design of the board, and any additional assemblies or packaging. If you have any questions about production volume or time please contact us!</p>
+        <div class="col-12 col-sm-8">
+            <h2>Assembly</h2>
+            <p>Placement of assembled PCBs into enclosures, harnesses, or fixtures is supported. Enclosure parts in most cases must be provided, but some prototyping enclosures can be manufactured in house. Packaging for individual sale can also be provided. All assemblies past SMT/THT depend on the needs of customer, so feel free to contact us with any questions!</p>
+        </div>
     </div>
 
-    <div class="rightc">
-        <h2>About</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+
+    <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-8">
+            <h2>Medium Volume</h2>
+            <p>We are set up to do medium volume production to get your product to market on time. Our maximum production rates will depend on the application, the design of the board, and any additional assemblies or packaging. If you have any questions about production volume or time please contact us!</p>
+        </div>
+
+        <div class="col-12 col-sm-4">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </div>
     </div>
 </div>
 

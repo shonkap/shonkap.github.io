@@ -42,12 +42,14 @@ small {
 
     /*Nav Bar*/
 .topnav {
+    margin-top: 20px;
     overflow: hidden;
 }
 .topnav a {
+    background: rgba(248, 247, 247, 0.7);
     float: right;
     display: block;
-    color: #f2f2f2;
+    color: #131211;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -157,7 +159,7 @@ small {
 .mainp {
     overflow:auto;
     padding-top:30px;
-    width:35%;
+    width:40%;
     margin:auto;
 
     color: rgb(214, 213, 221);
@@ -207,7 +209,7 @@ small {
 
 @media only screen and (max-width:620px) {
     /* For mobile phones: */
-    .menuh, .mainh, .righth, .mainc, .rightc, .maincontact, .rightcontact {
+    .menuh, .mainh, .righth, .mainc, .rightc, .maincontact, .rightcontact, .mainp {
     width:100%;
     }
 }
@@ -221,8 +223,8 @@ small {
     margin: 0;
 }
 .row{
-    display: table-cell;
-    vertical-align: middle;
+    color: rgb(214, 213, 221);
+    padding: 12px;
 }
 .no-top{
     margin-top: 0px;
