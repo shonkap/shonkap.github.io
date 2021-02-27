@@ -215,13 +215,6 @@ small {
 }
 
 /* new containers*/
-.col-3{
-    display: table;
-    float:left;
-    width:30%; 
-    text-align: left;
-    margin: 0;
-}
 .row{
     color: rgb(214, 213, 221);
     padding: 12px;
