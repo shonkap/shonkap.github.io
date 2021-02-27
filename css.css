@@ -8,7 +8,7 @@ body {
 }
 footer {
     width: 100%;
-    background-color: rf(243, 187, 4);
+    background-color: rbg(243, 187, 4);
 }
 h3 {
         font-size: 30px;
