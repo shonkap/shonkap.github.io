@@ -9,6 +9,7 @@ body {
 footer {
     width: 100%;
     background-color: rbg(243, 187, 4);
+    border-top: 2px solid rgb(238, 238, 236);
 }
 h3 {
         font-size: 30px;
