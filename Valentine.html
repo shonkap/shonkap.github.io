@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Avent sent you a letter!">
+  <meta property="og:image" content="images/heart.png">
+  <title>Valentines 2024</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f3f3f3;
+    }
+    #mail-container {
+      text-align: center;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .mail {
+      cursor: pointer;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    #mail-img {
+      width: 500px;
+      position: relative;
+      z-index: 1;
+    }
+    #mail-text {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      color: #333;
+      font-weight: bold;
+      display: block;
+      z-index: 2;
+      background-color: white;
+    }
+
+    .form {
+      display: none;
+      position: relative;
+      z-index: 4;
+    }
+
+    .grid-container {
+      display: grid;
+      place-items: center; /* Center the content in the grid */
+      background-image: url('images/mail_opened.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 500px; /* Same as the image's width */
+      height: 400px; /* Set a fixed height */
+      border-radius: 10px;
+      padding: 20px;
+
+      position: relative;
+    }
+
+    .box {
+      background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 80%;
+      font-size: 1.25rem;
+    }
+
+    .yesno {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .yes, .no {
+      cursor: pointer;
+      padding: 10px 20px;
+      background-color: #f44;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .yes:hover, .no:hover {
+      background-color: #d33;
+    }
+
+    #response {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Mail Container: Visible initially until clicked -->
+  <div id="mail-container">
+    <div class="mail" id="mail">
+      <img id="mail-img" src="images/mail_closed.png" alt="Mail" />
+      <h1 class="text-4xl sm:text-5xl" id="mail-text"  display="inline-block" background-color="white">You got mail!</h1>
+    </div>
+  </div>
+
+  <!-- Container for the form, which will be displayed when the mail opens -->
+  <div id="form" class="form">
+    <div class="grid-container">
+      <div class="box">
+        <h4>Dear, Sydney</h4>
+        <br />
+        <h4>Will you be my valentine?</h4>
+        <br />
+        <h4>Love, Pavel</h4>
+      </div>
+      <div class="yesno">
+        <a href="#" class="yes" id="yes-btn">Yes</a>
+        <a href="#" class="no" id="no-btn">No</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Response Section: Displayed after clicking Yes -->
+  <div id="response" class="text-center flex flex-col items-center">
+    <h4>Miss you!</h4>
+    <br />
+    <img width="150" src="images/sugarcubs-sugar.gif" alt="GIF" />
+    <h5>Love you LP!</h5>
+  </div>
+
+  <script>
+    let isMailOpened = false;
+
+    const mailImg = document.getElementById("mail-img");
+    const form = document.getElementById("form");
+    const mailContainer = document.getElementById("mail-container");
+    const yesBtn = document.getElementById("yes-btn");
+    const noBtn = document.getElementById("no-btn");
+    const response = document.getElementById("response");
+    const mailText = document.getElementById("mail-text");
+
+    mail.addEventListener("click", () => {
+      if (!isMailOpened) {
+        // Hide the mail container and show the form
+        mailContainer.style.display = "none";  // Hide mail container
+        form.style.display = "block";  // Show the form
+        mailImg.src = "images/mail_opened.png";  // Change the image to opened mail
+        mailText.style.display = "none";  // Hide the text "You got mail!"
+        isMailOpened = true;
+      }
+    });
+
+    noBtn.addEventListener("click", () => {
+      // You can add logic for the "No" button action here
+    });
+
+    yesBtn.addEventListener("click", () => {
+      form.style.display = "none";
+      response.style.display = "block";
+    });
+  </script>
+
+</body>
+</html>
